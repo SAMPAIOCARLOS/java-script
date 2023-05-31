@@ -11,14 +11,21 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquid repellat corrupti commodi enim cupiditate excepturi pariatur neque blanditiis ducimus! Saepe quia iure, expedita in at dignissimos eius repellendus pariatur!</p> 
 
     <script>
-        
-      var n1 = Number.parseFloat(window.prompt('digite um numero'))
 
-      var n2 = Number.parseFloat(window.prompt('digite outro numero'))
+      window.confirm('Gostaria de testar nossa calculadora')
+        
+      var n1 = Number(window.prompt('digite um numero'))
+
+      var n2 = Number(window.prompt('digite outro numero'))
 
       var s = n1 + n2
 
-      window.alert('A soma dos dois numeros é ' + s)
+      window.alert('A soma entre ' + n1 + ' e ' + n2 + ' é ' + s) /*feito com o sentido de concatenação*/
+
+      /*aqui um exemplo de como ficaria o "alert" com o sentido de temple string que a maneira de escrever com ${} 
+      
+      window.alert(`A soma entre ${n1} e ${n2} é ${s}`)
+      */
 
     </script>
 
