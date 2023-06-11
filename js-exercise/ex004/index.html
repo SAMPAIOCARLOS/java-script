@@ -21,14 +21,20 @@
          
         window.alert('Eu posso contar quantas letras tem no seu nome')
 
-        window.alert('Pode colocar o nome do jeito que for, eu ainda vou saber quantas letras tem')
+        window.alert('E também posso escrever em MAIÚSCULO E minúsculo ')
+
+        var leo = ('LENDA')
 
         var n1 = window.prompt('Digite seu nome 🤫')
         
-        document.write(`Seu nome tem ${n1.length} letras`) /*esse length conta quantas caracteres tem em tal coisa, aqui é no que for colocado na var*/
+        document.write(`Seu nome tem ${n1.length} letras <br> <br>`) /*esse length conta quantas caracteres tem em tal coisa, aqui é no que for colocado na var*/
 
+        document.write(`Olá! ${n1} seu nome em MAIÚSCULO é ${n1.toUpperCase()} <br> <br>`)
 
-        alert ((10*100) + 'palavras')
+        document.write(`E em minúsculo é ${n1.toLowerCase()} <br> <br>`)
+
+        document.write(`Mais em verdade eu digo que seu nome na verdade tem esse significado "${leo}"`)
+
         
     </script>    
 </body>
