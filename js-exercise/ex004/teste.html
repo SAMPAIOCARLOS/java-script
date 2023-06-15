@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        window.alert('Eu posso contar quantas letras tem seu nome')
+
+        window.alert('E também posso escrevelo em MAIÚCULO E minúsculo')
+
+        let nome1 = window.prompt('Digite seu nome')
+
+        document.write(`Seu nome tem ${nome1.length} Letras <br> <br>`)
+
+        document.write('Seu nome em MAIÚSCULO é ' + nome1.toUpperCase() + '<br> <br>')
+
+        document.write(`È em minúsculo é ${nome1.toLowerCase()}`)
+    </script>
+</body>
+</html>
