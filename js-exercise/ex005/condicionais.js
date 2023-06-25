@@ -23,3 +23,5 @@ if(saldoBancario > contaParaPagar){
 }else{
     console.log('Deixe de ser vagabundo e vai trabalhar para pagar suas contas')
 }
+
+
