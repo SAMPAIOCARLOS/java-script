@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const veiculo1 = window.prompt("Nome do veículo 1");
+
+    const veiculo2 = window.prompt("Nome do veículo 2");
+
+    const velocidade1Entrada = window.prompt("Escreva a velocidade do primeiro veículo");
+
+    const velocidade2Entrada = window.prompt("Escreva a velocidade do segundo veículo");
+
+
+    const velocidade1 = parseFloat(velocidade1Entrada);
+
+    const velocidade2 = parseFloat(velocidade2Entrada);
+
+
+    const resultado =
+       velocidade1 > velocidade2
+        ? "O veículo 1 estava mais rápido"
+        
+        : "O veículo 2 estava mais rápido";
+
+
+        const resultado3 = velocidade1 > velocidade2 ? veiculo1 : veiculo2;
+
+
+        alert("Resultado!\n" + resultado + "\nParabens você ganhou: " + resultado)
+</script>
+</html>
