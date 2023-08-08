@@ -4,23 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <script>
-        window.alert("eu posso contar quantas letras tem no se nome")
 
-        window.alert("E também posso dizer se seu nome é digno")
-
-        let n1 = window.prompt("digite seu nome aqui...")
-
-        if( n1.length === 6){
-            document.write(`Olá ${n1} seu nome tem ${n1.length}`)
-        }else{
-            document.write(`ele não vai não`)
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3em;
+            background-image: linear-gradient(to top, hsl(240, 100%, 27%), #8a2be2, #0000ff);
+            font-weight: bolder;
         }
 
+        /* main{
+            background-color: hsl(240, 100%, 27%);
+            background-color: #8a2be2;
+            background-color: #0000ff;
+        } */
+    </style>
 
-        
+</head>
+<body style="background-color: gray;">
+
+
+    <script>
+    //     window.alert('Eu posso adivinhar quantas letras tem no seu nome e escrevelo em maiusculo e minusculo')
+
+    //   let n1 =  window.prompt("digite seu nome")
+
+    //   let ncerto = "Carlos"
+
+    //   if(n1 === ncerto){
+    //     document.write(`Olá SR ${n1} seu nome tem ${n1.length} letras e em Maiusculo ele fica assim "${n1.toUpperCase()}"  <br>  <br>`)
+
+    //     document.write(`E em minuscula ele é assim "${n1.toLowerCase()}"`)
+    //   }else{
+    //     document.write(`Olá SR ${n1} Infelizmente seu nome não foi encontrado pela nossa equipe`)
+    //   }2000020
+
+    //   document.write(`Seu nome tem ${n1.length}`)
+
+
+    var valor1 = window.prompt("seu saldo")
+
+    var valor2 = 5000
+
+
+    if(valor1 < valor2){
+        document.write(`Seu saldo é suficiente para pagar sua divida`)
+    }else{
+        window.alert('Seu saldo NÂO é surficiente para pagar sua divida, vai trabalha veaco safado')
+    }
     </script>
+
+
 </body>
 </html>
