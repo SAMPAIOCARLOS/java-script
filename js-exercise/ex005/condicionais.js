@@ -7,9 +7,9 @@ const n1 = 5
 const n2 = 10 
 
 if(n1 < n2){
-    console.log('rapaz ele tá sem zap')
+    console.log('testando 2')
 }else{
-    console.log('rapaz ele tá com o zap')
+    console.log('tasrando 1')
 }
 
 
