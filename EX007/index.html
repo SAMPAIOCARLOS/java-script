@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(41, 43, 43);
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input{
+            width: 50px;
+            border: none;
+            outline: none;
+            background-color: #9797b090;
+            border-radius: 20px;
+            color: #ffffff;
+        }
+        div{
+            width: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        button{
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+        }
+        main{
+            background-color: rgba(0, 0, 0, 0.533);
+            padding: 50px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Calculadora</h1>
+        <p>Primeiro valor</p>
+        <input type="number" id="n1">
+        <br><br>
+        <p>segundo valor</p>
+        <input type="number" id="n2">
+<br><br>
+        <section>
+            <div>
+                <button onclick="multiplicar()">multiplicar</button>
+                <button onclick="subtrair()">subtrair</button>
+                <button onclick="somar()">somar</button>
+                <button onclick="dividir()">dividir</button>
+            </div>
+        </section>
+
+        O resultado é <span id="resultado"></span> 
+    </main>
+</body>
+<script>
+    let n1 = document.querySelector('#n1')
+
+    let n2 = document.querySelector('#n2')
+
+    let resultado = document.querySelector('#resultado')
+
+    function multiplicar() {
+        resultado.innerHTML = Number(n1.value) * Number(n2.value);
+    }
+
+    function subtrair() {
+        resultado.innerHTML = Number(n1.value) - Number(n2.value);
+    }
+
+    function somar() {
+        resultado.innerHTML = Number(n1.value) + Number(n2.value);
+    }
+
+    function dividir() {
+        resultado.innerHTML = Number(n1.value) / Number(n2.value);
+    }
+
+</script>
+</html>
