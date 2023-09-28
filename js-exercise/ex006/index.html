@@ -19,10 +19,18 @@
     <p>aprendendo a usar o <strong>DOM</strong> em javascrip</p>
     <div>clique em mim</div>
 
-    <script>
-        let p1 = window.document.getElementsByTagName('p')[0]
+    <p id="www"></p>
 
-        window.document.write('está escrito assim: ' +p1.innerText)
+    <script>
+        let h1 = document.querySelector('h1')
+
+        h1.textContent = 'outra coisa'
+
+        let www = document.getElementById('www')
+
+        www.textContent = 'wwwwwww'
+
+        
 
     </script>
 </body> 
