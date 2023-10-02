@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.342);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+        }
+        main{
+            width: 50%;
+            height: 50%;
+            background-color: gray;
+            padding: 50px;
+            border-radius: 10px;
+        }
+
+        .input{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        section{
+            width: 100%;
+            display: flex;
+            /* border: 1px solid rgb(24, 23, 23); */
+        }
+        .opcoes{
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+            /* border: 1px solid red; */
+            margin: auto;
+        }
+        #primeiroValor{
+            width: 40%;
+        }
+        #segundoValor{
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>calculadora</h1>
+        <div class="input">
+            <div>
+                <p>primeiro valor</p>
+                <input type="number" id="primeiroValor">
+            </div>
+            <div>
+                <p>segundo valor</p>
+                <input type="number" id="segundoValor">
+            </div>
+        </div>
+        <section>
+            <div class="opcoes">
+                <button id="somar">+</button>
+                <button id="subtrair">-</button>
+                <button id="multiplicar">x</button>
+                <button id="dividir">/</button>
+            </div>
+        </section>
+        <h3>O resultado é <span id="resultado"></span></h3>
+    </main>
+</body>
+<script>
+
+    let primeiroValor = document.querySelector('#primeiroValor')
+    let segundoValor = document.querySelector('#segundoValor')
+
+    let resultado = document.getElementById('resultado')
+
+    const somar = document.getElementById('somar')
+    const subtrair = document.getElementById('subtrair')
+    const multiplicar = document.getElementById('multiplicar')
+    const dividir = document.getElementById('dividir')
+
+   somar.addEventListener('click', function() {
+    resultado.innerHTML = Number(primeiroValor.value) + Number(segundoValor.value)
+   })
+
+   subtrair.addEventListener('click', function() {
+    resultado.innerHTML = Number(primeiroValor.value) - Number(segundoValor.value)
+   })
+
+   multiplicar.addEventListener('click', function() {
+    resultado.innerHTML = Number(primeiroValor.value) * Number(segundoValor.value)
+   })
+
+   dividir.addEventListener('click', function() {
+    resultado.innerHTML = Number(primeiroValor.value) / Number(segundoValor.value)
+   })
+
+</script>
+</html>
